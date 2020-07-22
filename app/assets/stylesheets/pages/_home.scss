@@ -1,0 +1,27 @@
+body{
+  min-height: 100vh;
+
+}
+
+nav{
+  position: fixed;
+  bottom:30px;
+  left: 30px;
+  z-index: 1;
+}
+
+nav a{
+  display: inline-block;;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0 10px 0 0;
+
+}
+
+  canvas{
+  background-image: url('https://res.cloudinary.com/daqhmzr2j/image/upload/v1594272599/unnamed_at9qni.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
