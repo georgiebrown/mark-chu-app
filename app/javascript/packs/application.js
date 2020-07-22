@@ -18,9 +18,12 @@ require("channels")
 import 'bootstrap';
 import { drawing } from "../components/drawing";
 import { createImage } from "../components/createImage";
+import { changeColour } from "../components/changeColour";
 
 drawing();
 createImage();
+changeColour();
+
 
 
 

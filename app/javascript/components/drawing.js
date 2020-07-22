@@ -10,7 +10,7 @@ $(function() {
 
 
 
-  context.strokeStyle = "black";
+  context.strokeStyle = "red";
   context.lineWidth = 1;
   context.lineCap = "round";
 
@@ -59,6 +59,17 @@ $(function() {
     })
 })
 
+  let count = 0;
+
+  document.addEventListener('click', (event) => {
+    count += 1;
+    console.log(count);
+     if (count == 5) {
+    context.strokeStyle = "blue";
+    context.lineWidth = 3;
+  };
+  })
+
   //clear button
   document.getElementById('clear').addEventListener('click', function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -71,7 +82,7 @@ $(function() {
     var dataURL = canvas.toDataURL();
     document.getElementById("canvasimg").src = dataURL;
     document.getElementById("canvasimg").style.display = "inline";
-    document.getElementById("canvasimg").style.backgroundImage = "url('https://res.cloudinary.com/daqhmzr2j/image/upload/v1594272599/unnamed_at9qni.jpg')";
+    document.getElementById("canvasimg").style.backgroundImage = "url('https://res.cloudinary.com/daqhmzr2j/image/upload/v1595396224/Screen_Shot_2020-07-22_at_3.36.06_pm_tzyswl.png')";
     imageUrl.push(dataURL);
   });
 
