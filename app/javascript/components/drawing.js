@@ -50,7 +50,7 @@ $(function() {
     }
   });
 
-  // changing colour
+  // changing colour with buttons
   document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", function(event) {
       console.log(this)
@@ -58,6 +58,8 @@ $(function() {
       context.strokeStyle = this.style.backgroundColor;
     })
 })
+
+  // changing colour with clicks
 
   let count = 0;
 
@@ -67,8 +69,19 @@ $(function() {
      if (count == 5) {
     context.strokeStyle = "blue";
     context.lineWidth = 3;
-  };
+  }
+    else if (count == 10){
+      context.strokeStyle = "green";
+      context.lineWidth = 5;
+    }
   })
+
+  // changing colour with time
+
+setInterval(function(){
+  context.strokeStyle = "white";
+ // do stuff here
+}, 15000);
 
   //clear button
   document.getElementById('clear').addEventListener('click', function() {

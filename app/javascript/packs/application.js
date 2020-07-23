@@ -23,7 +23,7 @@ import { changeColour } from "../components/changeColour";
 drawing();
 createImage();
 changeColour();
-
+setInterval();
 
 
 

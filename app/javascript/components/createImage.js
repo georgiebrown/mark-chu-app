@@ -4,6 +4,7 @@ function createImage() {
         var dataURL = canvas.toDataURL();
         document.getElementById("canvasimg").src = dataURL;
         document.getElementById("canvasimg").style.display = "inline";
+
     }
 
 
