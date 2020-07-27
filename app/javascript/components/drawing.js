@@ -11,7 +11,7 @@ $(function() {
 
 
   context.strokeStyle = "red";
-  context.lineWidth = 1;
+  context.lineWidth = 2;
   context.lineCap = "round";
 
   let shouldPaint = false;
@@ -66,22 +66,27 @@ $(function() {
   document.addEventListener('click', (event) => {
     count += 1;
     console.log(count);
-     if (count == 5) {
-    context.strokeStyle = "blue";
-    context.lineWidth = 3;
+     if (count == 10) {
+    context.strokeStyle = "#FF0C93";
+    context.lineWidth = 4;
   }
-    else if (count == 10){
-      context.strokeStyle = "green";
-      context.lineWidth = 5;
+    else if (count == 20){
+      context.strokeStyle = "#583B0E";
+      context.lineWidth = 6;
     }
   })
 
   // changing colour with time
 
 setInterval(function(){
-  context.strokeStyle = "white";
+  context.strokeStyle = "#FF0C93";
  // do stuff here
-}, 15000);
+}, 30000);
+
+setInterval(function(){
+  context.strokeStyle = "#583B0E";
+ // do stuff here
+}, 60000);
 
   //clear button
   document.getElementById('clear').addEventListener('click', function() {
